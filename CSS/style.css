@@ -1,0 +1,9 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Fonts/Unicode/Li-Alinur-Banglaborno.ttf);
+}
+
+
+h2{
+    color: red;
+}
