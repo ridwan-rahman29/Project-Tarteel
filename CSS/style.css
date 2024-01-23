@@ -1,9 +1,29 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(../Fonts/Unicode/Li-Alinur-Banglaborno.ttf);
+/* Main CSS Start */
+
+:root{
+    --mainbg:#3C2039;
+    --maintxt: #fff;
 }
 
+*{
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+   /* font-family: ; */
+}
 
-h2{
-    color: red;
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-left: 15px;
+}
+
+a{
+    text-decoration: none;
 }
