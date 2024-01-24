@@ -3,18 +3,26 @@
 :root{
     --mainbg:#3C2039;
     --maintxt: #fff;
+    --bn_font: Bn_font;
+    --eng_font: Lato;
+}
+/* font-family: 'Lato', sans-serif; */
+
+
+@font-face{
+    font-family: Bn_font;
+    src: url(../Bengali\ Fonts/Li_Sirajee_Sanjar_Unicode.ttf);
 }
 
 *{
    box-sizing:border-box;
    margin:0;
    padding:0;
-   /* font-family: ; */
 }
 
 body{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 .container{
@@ -27,3 +35,59 @@ body{
 a{
     text-decoration: none;
 }
+
+
+
+
+/* Header Area Start Here */
+
+
+.nav_cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 15px;
+}
+
+.logo_txt h1 {
+    font-size: 30px;
+    font-family: var(--bn_font);
+    color: var(--mainbg);
+}
+
+.Navbar {
+    padding: 5px 0;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0px 3px 11px 0px #91919194;
+}
+
+.nav ul li a {
+    font-family: var(--eng_font);
+    display: flex;
+    align-items: center !important;
+    gap: 5px;
+    color: #643061;
+    font-weight: 600;
+    transition: 0.3s;
+    
+}
+
+.nav ul li:hover a {
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+/* Header Area End Here */
