@@ -3,16 +3,27 @@
 :root{
     --mainbg:#3C2039;
     --maintxt: #fff;
-    --bn_font: Bn_font;
+    --bn_font: Bn_Siraj;
+    --bn_font_2: Bn_Padmasetu;
     --eng_font: Lato;
 }
 /* font-family: 'Lato', sans-serif; */
 
 
+/* TTF Font Code */
+
 @font-face{
-    font-family: Bn_font;
+    font-family: Bn_Siraj;
     src: url(../Bengali\ Fonts/Li_Sirajee_Sanjar_Unicode.ttf);
 }
+
+@font-face{
+    font-family: Bn_Padmasetu;
+    src: url(../Bengali\ Fonts/Li_Padmasetu_Unicode.ttf);
+}
+
+
+/* Common Codes */
 
 *{
    box-sizing:border-box;
@@ -91,3 +102,84 @@ a{
 }
 
 /* Header Area End Here */
+
+
+/* Main Section Start Here */
+
+#main_sec {
+    background-image: url(../Image/banner_1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main_sec_cont_txt {
+    margin-top: -20px;
+    z-index: 999;
+    position: relative;
+    font-family: var(--bn_font_2);
+}
+
+#main_sec::before {
+    width: 100%;
+    height: 100%;
+    background: #8585851c;
+    display: block;
+    content: '';
+    position: absolute;
+}
+
+.main_sec_cont_txt h1 {
+    font-size: 33px;
+}
+
+.main_sec_cont_txt h2 {
+    font-size: 38px;
+}
+
+.main_sec_cont_txt p {
+    font-size: 19px;
+}
+
+.main_sec_cont_txt a button {
+    background: #ffffff7d;
+    border: 2px solid var(--mainbg);
+    font-family: var(--bn_font);
+    font-size: 19px;
+    font-weight: 800;
+    padding: 7px 20px;
+    border-radius: 50px;
+    /* transition: 0.s; */
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.main_sec_cont_txt a button:hover {
+    background: var(--mainbg);
+    color: #fff;
+}
+
+.main_sec_cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stud_wrap {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    border: 4px solid var(--mainbg);
+    padding: 12px 20px;
+    font-family: var(--bn_font_2);
+    font-size: 18px;
+    border-radius: 18px;
+}
+
+/* Main Section End Here */
