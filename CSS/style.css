@@ -80,9 +80,11 @@ a{
 
 .Navbar {
     padding: 5px 0;
-    position: sticky;
+    position: fixed;
     width: 100%;
-    box-shadow: 0px 3px 11px 0px #91919194;
+    box-shadow: 0px 5px 13px 2px #91919194;
+    z-index: 999;
+    background: #fff;
 }
 
 .nav ul li a {
@@ -90,18 +92,19 @@ a{
     display: flex;
     align-items: center !important;
     gap: 5px;
-    color: #643061;
-    font-weight: 600;
+    color: #000;
+    font-weight: bolder;
     transition: 0.3s;
-    
+    font-size: 15px;
 }
 
 .nav ul li:hover a {
-    color: #000;
+    color: #892a7e;
     letter-spacing: 0.5px;
 }
 
 /* Header Area End Here */
+
 
 
 /* Main Section Start Here */
@@ -121,9 +124,9 @@ a{
 
 .main_sec_cont_txt {
     margin-top: -20px;
-    z-index: 999;
     position: relative;
     font-family: var(--bn_font_2);
+    width: 50%;
 }
 
 #main_sec::before {
@@ -143,8 +146,13 @@ a{
     font-size: 38px;
 }
 
+.main_sec_cont_txt h2 span {
+    color: var(--mainbg);
+}
+
 .main_sec_cont_txt p {
     font-size: 19px;
+    margin-bottom: 20px;
 }
 
 .main_sec_cont_txt a button {
@@ -155,12 +163,11 @@ a{
     font-weight: 800;
     padding: 7px 20px;
     border-radius: 50px;
-    /* transition: 0.s; */
     cursor: pointer;
     margin-top: 15px;
 }
 
-.main_sec_cont_txt a button:hover {
+.main_sec_cont_txt .main_sec_btn a button:hover {
     background: var(--mainbg);
     color: #fff;
 }
@@ -168,18 +175,110 @@ a{
 .main_sec_cont {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
 }
 
 .stud_wrap {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 50px;
-    border: 4px solid var(--mainbg);
-    padding: 12px 20px;
     font-family: var(--bn_font_2);
-    font-size: 18px;
-    border-radius: 18px;
+    padding: 100px 0px;
+    z-index: 9;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.main_sec_img {
+    width: 50%;
+}
+
+.main_sec_img img {
+    width: 100%;
+    height: auto;
+}
+
+
 /* Main Section End Here */
+
+
+
+/* Student Graph Section Start Here */
+
+.student_num{
+    background-color: var(--mainbg);
+    position: relative;
+    overflow: hidden;
+}
+
+.student_num::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Image/bg_effect.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.stud_wrap .stu_box {
+    background-color: #fff;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 14px 3px #5a5a5ac7;
+}
+
+.icon_img img {
+    width: 100%;
+    height: auto;
+    transition: 1.5s;
+}
+
+.icon_img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.stu_box h2 {
+    font-size: 30px;
+}
+
+.stu_box p {
+    font-size: 17px;
+}
+
+.stu_box1, .stu_box3 {
+    transform: scale(1.05);
+}
+
+.stu_box2 {
+    transform: scale(1.2);
+}
+
+.stud_wrap .stu_box:hover {
+    transform: scale(1.2);
+    border: 2px solid #000000cf
+    ;
+}
+
+.stud_wrap .stu_box2:hover {
+    transform: scale(1.3);
+}
+
+.stud_wrap .stu_box:hover .icon_img > img {
+    transform: rotateY(360deg);
+}
+
+/* Student Graph Section End Here */
