@@ -49,6 +49,31 @@ a{
 
 
 
+/* Disclaimer Section Start */
+
+.disclaimer {
+    display: flex;
+    align-items: center;
+}
+
+.disclaimer span {
+    width: 110px;
+    background: var(--mainbg);
+    clip-path: polygon(0 0,85% 0, 100% 100%, 0 100%);
+    color: #fff;
+    font-family: var(--eng_font);
+    padding: 5px;
+}
+
+.disclaimer marquee {
+    font-family: 'Lato';
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Disclaimer Section End */
+
 
 /* Header Area Start Here */
 
@@ -78,9 +103,11 @@ a{
     color: var(--mainbg);
 }
 
-.Navbar {
+header#header{
     padding: 5px 0;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100%;
     box-shadow: 0px 5px 13px 2px #91919194;
     z-index: 999;
@@ -142,11 +169,11 @@ a{
     font-size: 33px;
 }
 
-.main_sec_cont_txt h2 {
+.main_sec_cont_txt h2{
     font-size: 38px;
 }
 
-.main_sec_cont_txt h2 span {
+.main_sec_cont_txt h2 , .why_us_txt h2 span {
     color: var(--mainbg);
 }
 
@@ -155,7 +182,8 @@ a{
     margin-bottom: 20px;
 }
 
-.main_sec_cont_txt a button {
+.main_sec_cont_txt a{
+    display: inline-block;
     background: #ffffff7d;
     border: 2px solid var(--mainbg);
     font-family: var(--bn_font);
@@ -164,10 +192,16 @@ a{
     padding: 7px 20px;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 10px;
+    color: #000;
 }
 
-.main_sec_cont_txt .main_sec_btn a button:hover {
+.main_sec_cont_txt a i {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.main_sec_cont_txt .main_sec_btn a:hover {
     background: var(--mainbg);
     color: #fff;
 }
@@ -176,7 +210,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 .stud_wrap {
@@ -282,3 +316,45 @@ a{
 }
 
 /* Student Graph Section End Here */
+
+
+
+/* Why Us Section Start Here */
+
+
+.why_us_wrap {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.why_us_img img {
+    width: 100%;
+    height: auto;
+}
+
+.why_us_img {
+    height: 600px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 3px #00000029;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why_us_txt {
+    width: 55%;
+    padding-left: 40px;
+}
+
+.main_sec_cont_txt h2 , .why_us_txt h2 span{
+    font-size: 40px;
+}
+
+.why_us_txt h2 {
+    font-size: 30px;
+    font-family: var(--bn_font);
+}
+
+/* Why Us Section End Here */
