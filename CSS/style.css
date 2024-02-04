@@ -5,10 +5,12 @@
     --maintxt: #fff;
     --bn_font: Bn_Siraj;
     --bn_font_2: Bn_Padmasetu;
+    --bn_font_3: Bn_Alinur;
     --eng_font: Lato;
+    --arb_font: Noto Kufi Arabic;
 }
-/* font-family: 'Lato', sans-serif; */
-
+/* font-family: 'Lato', sans-serif;
+font-family: 'Noto Kufi Arabic', sans-serif; */
 
 /* TTF Font Code */
 
@@ -20,6 +22,11 @@
 @font-face{
     font-family: Bn_Padmasetu;
     src: url(../Bengali\ Fonts/Li_Padmasetu_Unicode.ttf);
+}
+
+@font-face{
+    font-family: Bn_Alinur;
+    src: url(../Bengali\ Fonts/Li_Alinur_Banglaborno_Unicode.ttf);
 }
 
 
@@ -182,7 +189,7 @@ header#header{
     margin-bottom: 20px;
 }
 
-.main_sec_cont_txt a{
+.main_sec_btn a{
     display: inline-block;
     background: #ffffff7d;
     border: 2px solid var(--mainbg);
@@ -196,12 +203,12 @@ header#header{
     color: #000;
 }
 
-.main_sec_cont_txt a i {
+.main_sec_btn a i {
     font-size: 15px;
     display: inline-block;
 }
 
-.main_sec_cont_txt .main_sec_btn a:hover {
+.main_sec_btn a:hover {
     background: var(--mainbg);
     color: #fff;
 }
@@ -321,6 +328,9 @@ header#header{
 
 /* Why Us Section Start Here */
 
+section#why_us_sec {
+    background-color: #F4F7FD;
+}
 
 .why_us_wrap {
     display: flex;
@@ -334,7 +344,7 @@ header#header{
 }
 
 .why_us_img {
-    height: 600px;
+    height: 650px;
     width: 40%;
     display: flex;
     justify-content: center;
@@ -346,6 +356,7 @@ header#header{
 .why_us_txt {
     width: 55%;
     padding-left: 40px;
+    padding-top: 50px;
 }
 
 .main_sec_cont_txt h2 , .why_us_txt h2 span{
@@ -357,4 +368,219 @@ header#header{
     font-family: var(--bn_font);
 }
 
+.why_us_txt p {
+    font-family: var(--bn_font_3);
+    margin-top: 14px;
+    font-size: 21px;
+}
+
 /* Why Us Section End Here */
+
+
+
+/* Favourite Course Section Start */
+
+section#fav_course {
+    padding: 80px 0px;
+}
+
+.fav_course_title {
+    margin: 40px 0 60px;
+    text-align: center;
+}
+
+.fav_course_title h2 {
+    font-family: var(--bn_font);
+    font-size: 35px;
+    display: inline-block;
+    position: relative;
+}
+
+.fav_course_title h2::before {
+    content: "";
+    width: 5px;
+    height: 30px;
+    background-color: var(--mainbg);
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fav_course_title h2::after {
+    content: "";
+    width: 5px;
+    height: 30px;
+    background-color: var(--mainbg);
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fav_course_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.fav_c_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.fav_c_rating i {
+    color: #daa520;
+    font-size: 15px;
+}
+
+.fav_c_img {
+    margin-bottom: 10px;
+}
+
+.fav_course_box {
+    padding: 20px 14px 70px;
+    box-shadow: 0px 0px 15px 3px #00000029;
+    border-radius: 10px;
+    font-family: var(--bn_font);
+    font-size: 19px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fav_course_box .fav_c_genre {
+    margin-top: 20px;
+}
+
+.fav_c_txt {
+    margin-top: 10px;
+}
+
+.fav_course_box .fav_c_genre, .fav_c_type {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.course_btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fav_course_box:hover {
+    transform: scale(1.1);
+}
+
+section#speac_tart {
+    background-color: #F4F7FD;
+    padding: 60px 0px;
+}
+
+.speacial_wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.speac_box {
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 15px 3px #00000029;
+    transition: 0.3s;
+    font-family: var(--bn_font_3);
+}
+
+.speac_box .speac_icon img {
+    width: 63%;
+    height: auto;
+}
+
+.speac_icon {
+    color: Var(--mainbg);
+    margin-bottom: 15px;
+}
+
+.speac_box .speac_icon i {
+    font-size: 53px;
+}
+
+.speac_txt h3 {
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.speac_txt p {
+    font-size: 17px;
+}
+
+
+/* Favourite Course Section End */
+
+
+
+/* Quran Ayat Section Start Here */
+
+section#sec_ayat {
+    padding: 80px 0px;
+    display: grid;
+    place-items: center;
+}
+
+.ayat_box h3 {
+    font-family: var(--arb_font);
+    font-size: 25px;
+    text-align: center;
+}
+
+.ayat_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ayat_box {
+    display: inline-block;
+}
+
+.ayat_box p {
+    font-family: var(--bn_font_2);
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.ayat_box span {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-family: var(--bn_font_2);
+    font-size: 17px;
+    position: relative;
+}
+
+.ayat_box span::before {
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: var(--mainbg);
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 180px;
+}
+
+/* Quran Ayat Section End Here */
+
+
+
+/* Student Review Section Start */
+
+
+
+/* Student Review Section End */
