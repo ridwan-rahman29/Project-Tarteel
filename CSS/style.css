@@ -351,6 +351,7 @@ section#why_us_sec {
     box-shadow: 0px 0px 15px 3px #00000029;
     flex-direction: column;
     align-items: center;
+    background: #fff;
 }
 
 .why_us_txt {
@@ -448,6 +449,7 @@ section#fav_course {
     font-size: 19px;
     transition: 0.3s;
     cursor: pointer;
+    transform: scale(0.9);
 }
 
 .fav_course_box .fav_c_genre {
@@ -470,15 +472,15 @@ section#fav_course {
 }
 
 .fav_course_box:hover {
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
-section#speac_tart {
+section#spec_tart {
     background-color: #F4F7FD;
     padding: 60px 0px;
 }
 
-.speacial_wrap {
+.special_wrap {
     display: flex;
     align-items: flex-start;
     gap: 30px;
@@ -486,7 +488,7 @@ section#speac_tart {
     flex-wrap: wrap;
 }
 
-.speac_box {
+.spec_box {
     background: #fff;
     padding: 40px 25px;
     border-radius: 10px;
@@ -496,29 +498,37 @@ section#speac_tart {
     font-family: var(--bn_font_3);
 }
 
-.speac_box .speac_icon img {
+.spec_box .spec_icon img {
     width: 63%;
     height: auto;
 }
 
-.speac_icon {
+.spec_icon {
     color: Var(--mainbg);
     margin-bottom: 15px;
 }
 
-.speac_box .speac_icon i {
+.spec_box .spec_icon i {
     font-size: 53px;
 }
 
-.speac_txt h3 {
+.spec_txt h3 {
     font-size: 25px;
     margin-bottom: 9px;
 }
 
-.speac_txt p {
+.spec_txt p {
     font-size: 17px;
 }
 
+.spec_box:nth-child(even){
+    background-color: var(--mainbg);
+    color: #fff;
+}
+
+.spec_box:nth-child(even) .spec_icon{
+    color: #fff;
+}
 
 /* Favourite Course Section End */
 
@@ -581,6 +591,55 @@ section#sec_ayat {
 
 /* Student Review Section Start */
 
+section#stud_review {
+    padding: 80px 0px;
+}
 
+.stud_review_wrap {
+    display: flex;
+    align-items: self-start;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}
+
+.stud_box {
+    background-color: #F5F5F5;
+    padding: 30px;
+    border: 1px solid var(--mainbg);
+    border-radius: 10px;
+    width: 33.33%;
+}
+
+.review_id {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.rev_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--mainbg);
+    object-fit: contain;
+}
+
+.rev_id_txt {
+    margin-left: 10px;
+}
+
+.stud_txt {
+    text-align: center;
+}
+
+.rev_id_txt h4 {
+    font-family: var(--bn_font_3);
+    font-size: 20px;
+}
+
+.rev_id_txt p {
+    font-family: var(--bn_font_2);
+}
 
 /* Student Review Section End */
