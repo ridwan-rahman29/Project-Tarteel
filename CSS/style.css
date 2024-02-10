@@ -661,8 +661,8 @@ section#stud_review {
     background-image: url(../Image/waves/wave_down.png);
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: -230px;
+    height: 60%;
+    top: -190px;
 }
 
 
@@ -693,6 +693,45 @@ section#stud_review {
 .foot_cont h3 {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+
+.foot_cont {
+    color: #fff;
+    font-family: var(--eng_font);
+    line-height: 31px;
+}
+
+.foot_cont p i {
+    margin-right: 5px;
+}
+
+.copyright_txt p {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-family: var(--eng_font);
+    font-size: 21px;
+}
+
+.foot_cont p a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.foot_cont h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.foot_cont p {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.foot_cont p:hover {
+    letter-spacing: 1px;
 }
 
 /* Footer - The End */
