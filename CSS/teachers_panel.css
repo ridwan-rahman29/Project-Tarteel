@@ -1,0 +1,71 @@
+/* Principal Teacher Start */
+
+.principal_teach_box_wrap {
+    margin: 50px 0px 100px;
+}
+
+.principal_teacher_box {
+    display: flex;
+    background: #F4F7FD;
+    border-radius: 10px;
+    border: 1px solid var(--mainbg);
+    padding: 30px 30px;
+    align-items: center;
+}
+
+.teach_img_txt img {
+    width: 100%;
+}
+
+.teach_img_txt {
+    width: 100%;
+    text-align: center;
+}
+
+._teach_id {
+    margin-left: 40px;
+}
+
+._teach_id h2 {
+    color: var(--mainbg);
+    font-family: var(--bn_font_3);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.teach_img_txt h3 {
+    font-family: var(--bn_font_3);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.teach_img_txt p span {
+    font-family: var(--bn_font);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px 0 15px;
+    display: inline-block;
+}
+
+._teach_id p {
+    font-family: var(--bn_font);
+    font-size: 20px;
+}
+
+.teach_txt {
+    margin-top: 23px;
+    line-height: 35px;
+}
+
+.teach_title {
+    margin: 30px 0px;
+    text-align: center;
+    font-family: var(--bn_font);
+    font-size: 23px;
+    background: #F4F7FD;
+    padding: 8px 0px;
+    border-radius: 10px;
+    border: 2px solid var(--mainbg);
+}
+
+/* Principal Teacher End */

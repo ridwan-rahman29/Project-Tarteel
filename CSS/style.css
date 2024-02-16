@@ -104,7 +104,7 @@ a{
     gap: 15px;
 }
 
-.logo_txt h1 {
+.logo_txt h1 a {
     font-size: 30px;
     font-family: var(--bn_font);
     color: var(--mainbg);
