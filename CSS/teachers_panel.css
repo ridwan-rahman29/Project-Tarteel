@@ -13,20 +13,20 @@
     align-items: center;
 }
 
-.teach_img_txt img {
+.principal_teach_img_txt img {
     width: 100%;
 }
 
-.teach_img_txt {
+.principal_teach_img_txt {
     width: 100%;
     text-align: center;
 }
 
-._teach_id {
+.principal_teach_id {
     margin-left: 40px;
 }
 
-._teach_id h2 {
+.principal_teach_id h2 {
     color: var(--mainbg);
     font-family: var(--bn_font_3);
     font-size: 40px;
@@ -39,7 +39,7 @@
     margin-bottom: 5px;
 }
 
-.teach_img_txt p span {
+.principal_teach_img_txt p span {
     font-family: var(--bn_font);
     font-weight: bold;
     font-size: 18px;
@@ -47,12 +47,12 @@
     display: inline-block;
 }
 
-._teach_id p {
+.principal_teach_id p {
     font-family: var(--bn_font);
     font-size: 20px;
 }
 
-.teach_txt {
+.principal_teach_txt {
     margin-top: 23px;
     line-height: 35px;
 }
@@ -66,6 +66,22 @@
     padding: 8px 0px;
     border-radius: 10px;
     border: 2px solid var(--mainbg);
+}
+
+.tajweed_tech_wrap, .nazera_tech_wrap, .hifz_tech_wrap, .male_tech_wrap {
+    display: flex;
+    justify-content: space-around;
+    gap: 11px;
+}
+
+.teach_img img {
+    width: 100%;
+    height: auto;
+}
+
+.techer_box {
+    width: 33.33%;
+    padding: 20px;
 }
 
 /* Principal Teacher End */
