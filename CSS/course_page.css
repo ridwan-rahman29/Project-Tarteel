@@ -1,0 +1,54 @@
+.sec_title_course {
+    margin: 70px 0px 40px;
+}
+
+.sec_title_course h2 {
+    font-family: var(--bn_font);
+    font-size: 30px;
+    position: relative;
+}
+
+.sec_title_course h2::after {
+    content: "";
+    width: 220px;
+    height: 8px;
+    background: var(--mainbg);
+    position: absolute;
+    bottom: -16px;
+    transform: skew(-10deg);
+    left: 130px;
+}
+
+.sec_flex_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* .tajweed_course_wrap {
+    flex-wrap: wrap;
+}
+
+.najera_course_wrap{
+    flex-wrap: wrap;
+}
+
+.tajweed_course_wrap {
+    width: 33.33%;
+}
+
+.najera_course_wrap{
+    width: 33.33%;
+}*/
+
+.mashq_course_wrap .course_box {
+    width: 40%;
+}
+
+.hifz_course_wrap .course_box {
+    width: 40%;
+}
+
+.amal_sura_course_wrap .course_box {
+    width: 40%;
+}
