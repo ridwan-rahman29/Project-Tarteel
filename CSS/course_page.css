@@ -16,7 +16,7 @@
     position: absolute;
     bottom: -16px;
     transform: skew(-10deg);
-    left: 130px;
+    left: 200px;
 }
 
 .sec_flex_wrap {
@@ -24,22 +24,6 @@
     align-items: center;
     justify-content: space-around;
 }
-
-/* .tajweed_course_wrap {
-    flex-wrap: wrap;
-}
-
-.najera_course_wrap{
-    flex-wrap: wrap;
-}
-
-.tajweed_course_wrap {
-    width: 33.33%;
-}
-
-.najera_course_wrap{
-    width: 33.33%;
-}*/
 
 .mashq_course_wrap .course_box {
     width: 40%;
@@ -51,4 +35,49 @@
 
 .amal_sura_course_wrap .course_box {
     width: 40%;
+}
+
+.main_title\&txt {
+    margin: 120px 0px 100px;
+    background-color: #F4F7FD;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--mainbg);
+}
+
+.main_title\&txt h3 {
+    font-family: var(--bn_font);
+    font-size: 35px;
+    text-align: center;
+    position:relative;
+    margin-bottom: 45px;
+}
+
+.main_title\&txt p {
+    font-family: var(--bn_font);
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+.main_title\&txt h3::after {
+    content: "";
+    width: 140px;
+    height: 8px;
+    background: var(--mainbg);
+    position: absolute;
+    bottom: -11px;
+    transform: skew(-10deg);
+    right: 350px;
+}
+
+.main_title\&txt h3::before {
+    content: "";
+    width: 140px;
+    height: 8px;
+    background: var(--mainbg);
+    position: absolute;
+    bottom: -11px;
+    transform: skew(-10deg);
+    left: 350px;
 }
