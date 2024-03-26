@@ -70,18 +70,30 @@
 
 .tajweed_tech_wrap, .nazera_tech_wrap, .hifz_tech_wrap, .male_tech_wrap {
     display: flex;
-    justify-content: space-around;
-    gap: 11px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .teach_img img {
-    width: 100%;
+    width: 50%;
     height: auto;
+    border-radius: 50%;
+    border: 4px solid var(--mainbg);
+    margin-bottom: 20px;
 }
 
 .techer_box {
-    width: 33.33%;
+    width: 30%;
     padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: 2px solid var(--mainbg);
+}
+
+.principal_teach_img_txt h3 {
+    font-family: var(--bn_font);
+    font-size: 29px;
+    margin-bottom: 3px;
 }
 
 /* Principal Teacher End */
