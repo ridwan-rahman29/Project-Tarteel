@@ -598,8 +598,8 @@ section#stud_review {
 
 .stud_review_wrap {
     display: flex;
-    align-items: self-start;
-    /* justify-content: space-between; */
+    /* align-items: self-start; */
+    justify-content: space-evenly;
     /* flex-wrap: wrap; */
     gap: 30px;
 }
@@ -643,6 +643,23 @@ section#stud_review {
     font-family: var(--bn_font_2);
 }
 
+.stud_box:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stud_box:last-child .stud_txt {
+    /* width: 90%; */
+    /* margin: auto; */
+    line-height: 28px;
+}
+
+.stud_txt p {
+    font-family: var(--bn_font);
+    font-size: 19px;
+}
+
 /* Student Review Section End */
 
 
@@ -661,8 +678,8 @@ section#stud_review {
     background-image: url(../Image/waves/wave_down.png);
     position: absolute;
     width: 100%;
-    height: 60%;
-    top: -190px;
+    height: 100%;
+    bottom: 260px;
 }
 
 
@@ -690,19 +707,19 @@ section#stud_review {
     margin-left: 5px;
 }
 
-.foot_cont h3 {
+.foot_cont h3, .attribution h3 {
     font-size: 30px;
     margin-bottom: 20px;
 }
 
 
-.foot_cont {
+.foot_cont, .attribution {
     color: #fff;
     font-family: var(--eng_font);
     line-height: 31px;
 }
 
-.foot_cont p i {
+.foot_cont p i, .attribution p i {
     margin-right: 5px;
 }
 
@@ -714,24 +731,25 @@ section#stud_review {
     font-size: 21px;
 }
 
-.foot_cont p a {
+.foot_cont p a, .attribution p a {
     color: #fff;
     text-decoration: underline;
     margin-left: 5px;
 }
 
-.foot_cont h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.foot_cont p {
+.foot_cont p, .attribution p{
     transition: .3s;
     cursor: pointer;
 }
 
-.foot_cont p:hover {
+.foot_cont p:hover, .attribution p:hover {
     letter-spacing: 1px;
+}
+
+.foot_wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 /* Footer - The End */

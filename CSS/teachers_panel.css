@@ -97,3 +97,27 @@
 }
 
 /* Principal Teacher End */
+
+
+/* Other Teaccher Section */
+
+._teach_id h3 {
+    font-family: var(--bn_font_2);
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+
+._teach_id p {
+    font-family: var(--bn_font_2);
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+
+.teach_txt {
+    line-height: 29px;
+    font-family: var(--eng_font);
+    font-weight: 600;
+}
+
+/* Other Teaccher Section End */
