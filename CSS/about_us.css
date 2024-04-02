@@ -1,0 +1,85 @@
+.main_title\&txt {
+    margin: 120px 0px 100px;
+}
+
+.main_title\&txt h3 {
+    font-family: var(--bn_font);
+    font-size: 35px;
+    text-align: center;
+    position:relative;
+    margin-bottom: 45px;
+}
+
+.main_title\&txt h3::after {
+    content: "";
+    width: 140px;
+    height: 8px;
+    background: var(--mainbg);
+    position: absolute;
+    bottom: -11px;
+    transform: skew(-10deg);
+    right: 480px;
+}
+
+.main_title\&txt h3::before {
+    content: "";
+    width: 140px;
+    height: 8px;
+    background: var(--mainbg);
+    position: absolute;
+    bottom: -11px;
+    transform: skew(-10deg);
+    left: 480px;
+}
+
+.about_wrap {
+    background: #F4F7FD;
+    border: 3px solid var(--mainbg);
+    border-radius: 120px;
+}
+
+.about_txt {
+    padding: 60px 0px 60px;
+    font-weight: bold;
+}
+
+.about_txt .title_salam {
+    font-family: var(--bn_font_3);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about_txt .txt_intro {
+    font-family: var(--bn_font);
+    font-size: 21px;
+}
+
+
+.about_box ul {
+    list-style: none;
+    width: 70%;
+}
+
+.about_box ul li {
+    margin-top: 20px;
+    font-family: var(--bn_font);
+    font-size: 18px;
+}
+
+.about_box ul li .fi.fi-br-check-circle {
+    color: #008000;
+}
+
+.about_box ul li .fi.fi-br-star {
+    color: #f9d203;
+}
+
+.txt_outro {
+    font-family: var(--bn_font);
+    font-size: 21px;
+    margin-top: 40px;
+}
+
+section#about_us {
+    margin-bottom: 300px;
+}
