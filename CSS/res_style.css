@@ -1,4 +1,4 @@
-@media screen and (Max-width:575px) {
+@media screen and (Min-width:250px) and (Max-width:575px) {
     
     .container{
         width:100%;
