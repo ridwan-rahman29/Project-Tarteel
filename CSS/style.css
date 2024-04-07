@@ -9,8 +9,11 @@
     --eng_font: Lato;
     --arb_font: Noto Kufi Arabic;
 }
+
 /* font-family: 'Lato', sans-serif;
 font-family: 'Noto Kufi Arabic', sans-serif; */
+
+
 
 /* TTF Font Code */
 
@@ -44,7 +47,7 @@ body{
 }
 
 .container{
-    width: 1140px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-left: 15px;
