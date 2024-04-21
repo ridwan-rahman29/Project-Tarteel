@@ -60,7 +60,7 @@ a{
 
 
 /* Disclaimer Section Start */
-
+/* 
 .disclaimer {
     display: flex;
     align-items: center;
@@ -80,9 +80,10 @@ a{
     letter-spacing: 4px;
     font-size: 20px;
     font-weight: bold;
-}
+} */
 
 /* Disclaimer Section End */
+
 
 
 /* Header Area Start Here */
