@@ -25,6 +25,7 @@
 
     .main_title\&txt h3::before, .main_title\&txt h3::after {
         width: 0px !important;
+        height: 0px !important;
     }
     
     .about_txt {
@@ -43,6 +44,33 @@
         width:540px;
         padding: 0px 15px;
     }
+    
+    .nav ul {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .foot_wrap {
+        flex-direction: column;
+        gap: 70px;
+    }
+    
+    .copyright_txt p {
+        font-size: 18px;
+    }
+
+    .main_title\&txt h3::before, .main_title\&txt h3::after {
+        width: 0px !important;
+        height: 0px !important;
+    }
+    
+    .about_txt {
+        padding: 40px 20px 40px;
+    }
+    
+    .about_wrap {
+        border-radius: 50px;
+    }
 
 }
 
@@ -51,6 +79,33 @@
     .container{
         width:720px;
         padding: 0px 15px;
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .foot_wrap {
+        flex-direction: column;
+        gap: 70px;
+    }
+    
+    .copyright_txt p {
+        font-size: 18px;
+    }
+
+    .main_title\&txt h3::before, .main_title\&txt h3::after {
+        width: 0px !important;
+        height: 0px !important;
+    }
+    
+    .about_txt {
+        padding: 40px 20px 40px;
+    }
+    
+    .about_wrap {
+        border-radius: 50px;
     }
 
 }
