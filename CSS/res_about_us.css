@@ -5,6 +5,10 @@
         padding: 0px 15px;
     }
 
+    header#header{
+        position: static;
+    }
+
     .logo_txt h1 a {
         font-size: 25px;
     }
@@ -44,6 +48,10 @@
         width:540px;
         padding: 0px 15px;
     }
+
+    header#header{
+        position: static;
+    }
     
     .nav ul {
         flex-direction: column;
@@ -79,6 +87,10 @@
     .container{
         width:720px;
         padding: 0px 15px;
+    }
+
+    header#header{
+        position: static;
     }
     
     .nav ul {

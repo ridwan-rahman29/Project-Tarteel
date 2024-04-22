@@ -55,6 +55,10 @@
         width: 100%;
     }
 
+    header#header{
+        position: static;
+    }
+
 }
 
 @media screen and (Min-width:576px) and (Max-width:767px) {
@@ -100,6 +104,10 @@
 
     .principal_teach_img_txt img {
         width: 70%;
+    }
+
+    header#header{
+        position: static;
     }
     
 
@@ -160,6 +168,10 @@
 
     .principal_teach_img_txt img {
         width: 50%;
+    }
+    
+    header#header{
+        position: static;
     }
 }
 

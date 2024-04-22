@@ -5,6 +5,10 @@
         padding: 0px 15px;
     }
     
+    header#header{
+        position: static;
+    }
+
     .main_sec_cont_txt {
         width: 100%;
     }
@@ -114,6 +118,10 @@
         padding: 0px 15px;
     }
 
+    header#header{
+        position: static;
+    }
+    
     .main_sec_cont {
         flex-direction: column-reverse;
     }
@@ -227,6 +235,10 @@
         padding: 0px 15px;
     }
     
+    header#header{
+        position: static;
+    }
+
     .main_sec_cont_txt {
         width: 100%;
     }
