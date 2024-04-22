@@ -747,3 +747,32 @@ section#stud_review {
 }
 
 /* Footer - The End */
+
+
+/* To Top Btn Start */
+
+.to_top_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.to_top_btn a {
+    color: var(--mainbg);
+    background: #fff;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    border: 2px solid #5e3d5b;
+    transition: 0.3s;
+}
+
+.to_top_btn a:hover {
+    color: white;
+    background: var(--mainbg);
+}
+
+/* To Top Btn End */
